@@ -8,13 +8,97 @@
 		background-image: url("http://www.1366x768.net/large/201311/15902.jpg");
 		background-attachment: fixed;
 	}
+
+		.effect {
+  position: relative;
+} 
+.effect img {
+  width: 100%;
+  height: 100%;
+}
+.eff-2-3 {
+  width: 300px;
+  height: 170px;
+  overflow: hidden;
+}
+.eff-2-3 .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  -o-transition: all 0.5s linear 0s;
+  -webkit-transition: all 0.5s linear 0s;
+  -moz-transition: all 0.5s linear 0s;
+  -o-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+.eff-2-3 .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  left: 300px;
+  opacity: 0;
+  -o-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.eff-2-3 .caption p {
+  margin: 15px 0px;
+  text-align: center;
+  font-style: italic;
+  padding: 0px 10px;
+  opacity: 0;
+  -o-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.eff-2-3 .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  opacity: 0;
+  left: -300px;
+  -o-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.eff-2-3:hover h4,
+.eff-2-3:hover a.btn {
+  left: 0px;
+  opacity: 1;
+}
+.eff-2-3:hover .caption,
+.eff-2-3:hover p {
+  opacity: 1;
+}         
 	.title{
 		color: white;
 		font-family:  "Courier New", sans-serif;
 		text-align: center;
-		font-size: 50px;
+		font-size: 70px;
 		text-decoration: underline;
-		margin-top: 70px;
+		margin-top: 80px;
 	}
 	.developer{
 		display: inline-block;
@@ -26,22 +110,25 @@
 		margin-bottom: 100px;
 	}
 	.nastya{
-		background: url("http://i387.photobucket.com/albums/oo313/anonbird/RPG%20Maker%20VX/birdzilla_dog-recolors.png") no-repeat 50% 50%;
-		top: 200px;
+		position: absolute;
+		left: 630px;
+		top: 260px;
 	}
 	.sasha{
-		background: url("http://i387.photobucket.com/albums/oo313/anonbird/RPG%20Maker%20VX/birdzilla_cat-recolors.png") no-repeat;
-		top: 400px;
+		position: absolute;
+		left: 630px;
+		top: 460px;
 	}
 	.zhenya{
-		background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvxLV-beIC7NLiJMSh-YRod5W1anIwM2METpnoUDyqoLMmA7g_") no-repeat;
-		top: 600px;
+		position: absolute;
+		left: 630px;
+		top: 660px;
 	}
 	.developers{
 		display: inline-block;
 		position: absolute;
 		top: 250px;
-		left: 500px;
+		left: 400px;
 		font-size: 40px;
 		color: white;
 	}
@@ -57,9 +144,15 @@
 	}
 	iframe{
 		position: absolute;
-		left: 400px;
+		left: 80px;
 		top: 900px;
 		margin-bottom: 50px;
+	}
+	.map{
+		position: absolute;
+		left: 700px;
+		top: 900px;
+		margin-bottom: 50px;		
 	}
 	</style>
 </head>
@@ -67,10 +160,35 @@
 	<div class="title">Кошечки - Собачки!</div>
 	<div class="developers">Developers:</div>
 	<div class="developersians">
-		<a class="developer nastya"><div class="photo n"></div></a>
-		<a class="developer sasha"><div class="photo s"></div></a>
-		<a class="developer zhenya"><div class="photo z"></div></a>
+		<div class="nastya">
+			<div class="effect eff-2-3">
+  				<img src="http://i387.photobucket.com/albums/oo313/anonbird/RPG%20Maker%20VX/birdzilla_dog-recolors.png" alt="Effect #2" />
+ 			 	<div class="caption">
+    			<h4>Bilashevska <br> Anastasia</h4>
+    			<p>HTML, CSS, Design</p>
+  				</div>
+			</div>
+		</div> 
+		<div class="sasha">
+			<div class="effect eff-2-3">
+  				<img src="http://i387.photobucket.com/albums/oo313/anonbird/RPG%20Maker%20VX/birdzilla_dog-recolors.png" alt="Effect #2" />
+ 			 	<div class="caption">
+    			<h4>Skorichenko <br> Oleksandr</h4>
+    			<p>HTML, CSS, Design</p>
+  				</div>
+			</div>
+		</div>
+		<div class="zhenya">
+			<div class="effect eff-2-3">
+  				<img src="http://i387.photobucket.com/albums/oo313/anonbird/RPG%20Maker%20VX/birdzilla_dog-recolors.png" alt="Effect #2" />
+ 			 	<div class="caption">
+    			<h4>Stadnyuk <br> Eugene</h4>
+    			<p>HTML, CSS, JS</p>
+  				</div>
+			</div>
+		</div>
 	</div>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/K15VqcIisjk" frameborder="0" allowfullscreen></iframe>
+	<div class="map"><script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=iEIj5o7xi8zSEBW0w5kU-jAgHCnTjhDW&width=560&height=315"></script></div>
 </body>
 </html>
